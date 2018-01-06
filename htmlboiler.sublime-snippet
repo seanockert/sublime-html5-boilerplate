@@ -1,43 +1,79 @@
 <snippet>
     <content><![CDATA[
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>${1}</title>
-        <meta name="description" content="${2}">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>${1:Website}</title>
+    <meta name="description" content="${2}">
+    <meta name="format-detection" content="telephone=no">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <base href="/">
+    
+    <link href="images/favicon-96x96.png" rel="icon" type="image/png">
+    <link href="images/apple-touch-icon-180x180.png" rel="apple-touch-icon" >
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <!-- Facebook Open Graph -->
+    <meta property="fb:app_id" content="123456789">
+    <meta property="og:url" content="http://example.com/page.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Content Title">
+    <meta property="og:image" content="http://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="">
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="http://example.com/page.html">
+    <meta name="twitter:title" content="Content Title">
+    <meta name="twitter:description" content="Content description less than 200 characters">
+    <meta name="twitter:image" content="http://example.com/image.jpg">          
+     
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->    
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+      gtag('config', 'GA_TRACKING_ID');
+    </script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="container">
+      <div id="header" class="header">
+      
+      </div> <!-- /Header -->
+      
+      <div class="content">
+          
+      </div> <!-- /Content -->
+      
+      <div id="footer" class="footer">
+        &copy; 2018
+      </div> <!-- /Footer -->
+    </div> <!-- /Container -->
+    
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
 ]]></content>
-    <tabTrigger>htmlboiler</tabTrigger>
+    <tabTrigger>html5</tabTrigger>
     <scope>text.html</scope>
 </snippet>
